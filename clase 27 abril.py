@@ -50,7 +50,7 @@ for i in lista_compras:
 
 """
 print(formulario.items())
-#* Metodo 1: para imprimir llaves y valro en un recorrido en un diccionario
+#* Metodo 1: para imprimir llaves y valor en un recorrido en un diccionario
 for dato in formulario:
     print("LLave:" ,dato)
     print("Valor:" ,formulario.get(dato)) #* nos devuelve el valor de una llave
@@ -81,7 +81,4 @@ for alumno,nota in lista_curso:
     else:
         print(f"El alumno {alumno} esta aprobado")
 """       
-try:
-    resultado = 2/0
-except Va
-    print("Error")
+
