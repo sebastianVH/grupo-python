@@ -54,3 +54,4 @@ for art,cant in lista_compras:
     
 for i in range(len(lista_compras)): #1
     print(f" De {lista_compras[i][0]}, debo comprar {lista_compras[i][1]}")
+
