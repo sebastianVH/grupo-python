@@ -14,13 +14,14 @@ lista_todo = [] #* creamos la lista por fuera, para evitar que nuestro bucle, la
 
 
 while True: #*decimos que nuestra condicion es SIEMPRE true ATENCION!!! recordemos usar una sentencia BREAK para salir del bucle
+    print("")
     opcion = int(input("Elija una opcion:\n1)Listar TODO's\n2)Agregar Nuevos\n3)Marcar realizadas\n4)Salir\n>>>"))
     if opcion == 1:
         if len(lista_todo) == 0:
             print("Lista Vacia. ")
         else:
             for i in range(len(lista_todo)):
-                print(f"{i}: {lista_todo[i]}")
+                print(f"{i+1}: {lista_todo[i]}")
                 
     elif opcion == 2:
         while True:
@@ -32,15 +33,19 @@ while True: #*decimos que nuestra condicion es SIEMPRE true ATENCION!!! recordem
                 break
             
     elif opcion == 3:
-        if len(lista_todo) == 0:
-            print("No hay tareas para eliminar.")
-        else:
-            for i in range(len(lista_todo)):
-                print(f"{i+1}- {lista_todo[i]}")
-            eliminar = int(input("Elija la tarea a eliminar: "))
-            tarea_eliminada = lista_todo.pop(eliminar-1)
-            print(f"{tarea_eliminada} fue eliminada de la lista.")
-            
+        while True:
+            if len(lista_todo) == 0:
+                print("No hay tareas para eliminar.")
+                break
+            else:
+                for i in range(len(lista_todo)):
+                    print(f"{i+1}- {lista_todo[i]}")
+                eliminar = int(input("Elija la tarea a eliminar: "))
+                tarea_eliminada = lista_todo.pop(eliminar-1)
+                print(f"{tarea_eliminada} fue eliminada de la lista.")
+                repetir = input("¿Desea eliminar otra tarea? S/N: ")
+                if repetir == "N" or repetir == "n":
+                    break
     elif opcion == 4:
         print("Gracias por utilizar nuestro programa.")
         break
@@ -49,6 +54,7 @@ while True: #*decimos que nuestra condicion es SIEMPRE true ATENCION!!! recordem
         
         
 """
-TODO: en la parte de ELIMINAR UNA TAREA, debe preguntarnos si deseamos eliminar otra. Si ponemos N, salimos, delo contrario, repetimos el proceso de ELEGIR que tarea quiere eliminar
+TODO: en la parte de ELIMINAR UNA TAREA, debe preguntarnos si deseamos eliminar otra. Si ponemos N, salimos, de lo contrario, repetimos el proceso de ELEGIR que tarea quiere eliminar.
 
 """
+
