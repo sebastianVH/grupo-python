@@ -35,3 +35,12 @@ cuadrado(8)
 TODO: crear una funcion que reciba 2 argumentos: un numero y luego otro (estos son pedidos a traves de 2 input distintos, al usuario). Esta funcion tomara esos 2 numeros los multiplicara y devolvera el resultado. Ej: si recibo 4 y 7, La multiplicacion de 4 y 7 es 28.
 """
 
+def multiplicacion(num1,num2):
+    resultado = num1 * num2
+    print(f'El resultado de la multiplicacion es: {resultado}')
+    
+
+numero1=int(input("Por favor, ingrese el primer numero:\n>>>"))
+numero2=int(input("Por favor, ingrese el segundo numero:\n>>>"))
+
+multiplicacion(numero1,numero2)
