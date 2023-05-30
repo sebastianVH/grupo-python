@@ -3,7 +3,6 @@ import actualizarTodo as at
 import verTodo as vt
 import eliminarTodo as et
 
-
 listado_todo = [] #aca almacenamos TODAS NUESTRAS TAREAS
 
 print("Bienvenidos a nuestro programa: ")
