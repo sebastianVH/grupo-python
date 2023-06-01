@@ -1,6 +1,7 @@
-#from validar import validar
-#from consultar import consulta
+from validar import validar
+from consultar import consulta
 from extraer import extraccion
+from depositar import deposito
 
 """
 El programa tiene 4 opciones: extraccion, deposito, consulta, salir.
@@ -19,19 +20,23 @@ SENTENCIAS NO VALIDAS: dan como resultado un False
 ej: string vacios (""), numero 0 (dato Integer), booleano False , dato tipo nulo: None
 
 """
-#ingresamos y validamos al usuario
-#validar()
 
-#vamos a crear una variable que contenga el saldo del usuario
-saldo = 15000
 
-#consulta(saldo)
+def progPpal():
+    validar()
+    saldo = 15000
 
-monto = int(input("Ingrese un monto a extraer: "))
-saldo = extraccion(monto,saldo)
-print(saldo)
-
-#TODO: crear la funcion de deposito, importarla y usarla
-monto = int(input("Ingrese un monto a depositar: "))
-saldo = deposito()
-print(saldo)
+    while True:
+        print()
+        opcion = int(input("Elija la opcion a ejecutar:\n1)Extraccion\n2)Deposito\n3)Consulta\n4)Salir\n>>>"))
+        if opcion == 1:
+            monto = int(input("Ingrese un monto a extraer: "))
+            saldo = extraccion(monto,saldo)
+        elif opcion == 2:
+            monto = int(input("Ingrese un monto a depositar: "))
+            saldo = deposito(monto,saldo)
+        elif opcion == 3:
+            consulta(saldo)
+        elif opcion == 4:
+            print("Gracias por utilizar nuestro servicios.")
+            break

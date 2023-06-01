@@ -9,4 +9,3 @@ def verTodo(listado: list):
         print(f'Tarea: {i["Tarea"]}, Estado: {estado}')
         
         
-tareas1= [{'Tarea': 'comprar alimento para el perro', 'Estado': True}, {'Tarea': 'cortar el pasto', 'Estado': False}, {'Tarea': 'hacer la tarea', 'Estado': False}]
