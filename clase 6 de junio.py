@@ -84,7 +84,7 @@ sumatoria(1,15) => 1+1+1+1+1+1+1+1+1+1+1+1+1+1+1 => 15
 #restando(1,15) => 1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 => -13
 #restando (1,2) => 1-1 => 0
 
-#TODO: buscar en internet ERRORES de python (asserts y exceptions)
+# homework: buscar en internet ERRORES de python (asserts y exceptions)
 """
 ValueError, ZeroDivisionError, IndexError, (cuando intentan convertir una letra a numero)
 IndexError: es un error que indica que una busqueda esta fuera de indice
