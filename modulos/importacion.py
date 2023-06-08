@@ -3,6 +3,7 @@
 #? para importar un archivo COMPLETO:
 
 import principal as pp #le doy un alias, para poder utilizarlo en mi codigo:
+from principal import funcion_que_no_existe
 
 cantidad = int(input("Indique cuantos articulos va a comprar: "))
 lista = pp.crearLista(cantidad)
