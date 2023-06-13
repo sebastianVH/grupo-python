@@ -45,7 +45,7 @@ while True:
         numero2 = int(input("Ingrese el segundo numero: "))
         resultado = numero1/numero2
         break
-    except (ValueError, ZeroDivisionError,NameError) as er :
+    except (ValueError, ZeroDivisionError,NameError) as er : #se puede poner Exception
         print("No pongas letras, o simbolos, soquete!")
         print(er)
         variable = "hola"
@@ -56,17 +56,17 @@ print("El resultado es",resultado)
 """
 #Clase EXCEPTION
 
-while True:
-    try:
-        numero1 = input("Ingrese el primer numero: ")
-        numero2 = int(input("Ingrese el segundo numero: "))
-        if numero1 > numero2:
-            print("Es mayor")
-        break
-    except Exception as error:
-        print("Se encontro un error")
-        print(error)
-        continue
+# while True:
+#     try:
+#         numero1 = input("Ingrese el primer numero: ")
+#         numero2 = int(input("Ingrese el segundo numero: "))
+#         if numero1 > numero2:
+#             print("Es mayor")
+#         break
+#     except Exception as error:
+#         print("Se encontro un error")
+#         print(error)
+#         continue
 
 # print("El resultado es",resultado)
 
@@ -98,3 +98,46 @@ ej:
 if var1 == var2:
     print("Es true")
 """
+#homework
+
+# var1 = "caracter"
+# if var1:
+#     print("1-Es valido")
+
+# var2 = ""
+# if var2:
+#     print("2-Es valido")
+
+# var3 = True
+# if var3:
+#     print("3-Es valido")
+
+# var4 = False
+# if var4:
+#     print("4-Es valido")
+
+# var5 = 1
+# if var5:
+#     print("5-Es valido")
+
+# var6 = 0
+# if var6:
+#     print("6-Es valido")
+
+# #? los contenidos de las variables VAR2 ,VAR4, VAR6 son considerados FALSE en su expresion booleana:
+# #? el strign VACIO, el False y el 0, son considerados FALSOS en una validacion booleana
+# #! SIEMPRE DEBEN EVALUARSE DE MANERA AISLADA, nunca en UN GRUPO  de condicionales
+
+# if var2 == var4: # string vacio y false "" == False
+#     print("1-es true")
+# if var1 == var6: # caracter y numero 0 "a" == 0
+#     print("2-Es true")
+# if var1 == var3:# caracter y true "a" == true
+#     print("3-es true")
+
+#?EXPRESIONES DE VALIDACION: segun la EVALUACION del contenido, podemos dar decisiones booleanas
+nombre= int(input("Ingrese su edad: "))
+if nombre:
+    print(f"edad: {nombre}")
+else:
+    print("Por favor indique su edad!!! ")
