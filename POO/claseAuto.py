@@ -1,8 +1,5 @@
 #Creacion de una clase: las clases se crear !!!!CAPITALIZADAS!!!!!
 
-from typing import Any
-
-
 class Automovil():
     #comenzar a definir un estado inicial de mi objeto:
     def __init__(self,marca,modelo,color,fabricacion):
@@ -74,15 +71,13 @@ class Automovil():
 
         
      
-
-    
 mi_auto = Automovil("Ford","Mustang","Verde",1966)
 mi_auto2 = Automovil("Chevrolet","Corvette","Blanco",1969)
 
 #para usar un metodo , debemos LLAMAR AL OBJETO y LLAMAR A SU METODO:
 
 caracteriscas_objeto = mi_auto.getCaracteriscas()
-print(caracteriscas_objeto)
+# print(caracteriscas_objeto)
 
 # caract_objeto2 = mi_auto2.getCaracteriscas()
 # print(caract_objeto2)
@@ -126,20 +121,20 @@ print(caracteriscas_objeto)
 # print(accion) #vemos lo que me devolvio ese estado
 
 
-print(mi_auto.getVelocidad()) #VEMOS LA VELOCIDAD
-mi_auto.setAcelerar(50) 
-print(mi_auto.getVelocidad())
+# print(mi_auto.getVelocidad()) #VEMOS LA VELOCIDAD
+# mi_auto.setAcelerar(50) 
+# print(mi_auto.getVelocidad())
 
-estado_2 = mi_auto.setEncendido()
-print(estado_2)
-mi_auto.setFrenar(20)
-print(mi_auto.getVelocidad())
-mi_auto.setAcelerar(50) 
-mi_auto.setFrenar(20)
-print(mi_auto.getVelocidad())
-mi_auto.setFrenar(20)
-mi_auto.setFrenar(20)
-mi_auto.setFrenar(20)
+# estado_2 = mi_auto.setEncendido()
+# print(estado_2)
+# mi_auto.setFrenar(20)
+# print(mi_auto.getVelocidad())
+# mi_auto.setAcelerar(50) 
+# mi_auto.setFrenar(20)
+# print(mi_auto.getVelocidad())
+# mi_auto.setFrenar(20)
+# mi_auto.setFrenar(20)
+# mi_auto.setFrenar(20)
 
 """
 Van a crear la clase Persona. Esta clase tiene de atributos iniciales: nombre, edad, nacionalidad , y como estados tiene caminar (estado valor 0), despierto (true)
@@ -161,6 +156,5 @@ si la persona NO ESTA DESPIERTA (se encuentra dormido), no podra caminar.
 *Posibilidad 2:
 agregar un nuevo atributo que sea "sonambulo". Y si la persona esta dormida, y su velocidad al caminar aumenta, cambiaremos este atributo a True, y pondremos que "la persona esta sonambula"
 OJO: al momento de DESPERTAR  a la persona, este atributo DEBE CAMBIAR A FALSE
-
 
 """
