@@ -53,7 +53,6 @@ vehiculo_liberado = garage1.liberarVehiculo()
 print(f'Se quito al vehiculo {vehiculo_liberado}')
 
 """
-
 crear Clase  que se llame Salon(). la clase salon tiene una capacidad de personas, (numerica), y cada objeto guardado, ocupa un lugar.
 Salon tiene atributos de capacidad = numerica, nombre_curso = string , estado_completo = false , lista_alumnos = []
 
