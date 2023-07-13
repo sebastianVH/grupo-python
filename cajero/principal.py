@@ -25,7 +25,6 @@ ej: string vacios (""), numero 0 (dato Integer), booleano False , dato tipo nulo
 def progPpal():
     validar()
     saldo = 15000
-
     while True:
         print()
         opcion = int(input("Elija la opcion a ejecutar:\n1)Extraccion\n2)Deposito\n3)Consulta\n4)Salir\n>>>"))
